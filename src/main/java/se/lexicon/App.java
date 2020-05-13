@@ -1,9 +1,12 @@
 package se.lexicon;
 
+import se.lexicon.enumPractise.Dice;
 import se.lexicon.garage.Car;
 import se.lexicon.garage.Motorcycle;
 import se.lexicon.garage.Truck;
 import se.lexicon.garage.Vehicle;
+
+import java.util.Random;
 
 /**
  * Hello world!
@@ -15,10 +18,15 @@ public class App
     {
         // Run Vehicle
         //vehicle();
+        //randomEnumDiceRoll();
 
+    }
 
-
-
+    public static void randomEnumDiceRoll(){
+        System.out.println("Roll D6:   " + Dice.D6.roll());
+        System.out.println("Roll D10:  " + Dice.D10.roll());
+        System.out.println("Roll D20:  " + Dice.D20.roll());
+        System.out.println("Roll D100: " + Dice.D100.roll());
     }
 
     public static void vehicle(){
